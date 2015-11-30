@@ -135,7 +135,7 @@ namespace HelloWorld.Tests
         {
             var testName = string.Format("Test {0}", testId);
             Console.WriteLine("Start test {0}", testName);
-            Thread.Sleep(Rnd.Next(500));
+            Thread.Sleep(500 + Rnd.Next(500));
             Console.WriteLine("Finish test {0}", testName);
         }
     }
