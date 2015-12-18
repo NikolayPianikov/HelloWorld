@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Test" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<!--UsingTask TaskName="NUnit" AssemblyFile="Libs\MSBuild.Community.Tasks.dll"/-->
-    <UsingTask TaskName="JetBrains.BuildServer.MSBuildLoggers.NUnit" AssemblyFile="C:\TeamCity\buildAgent\plugins\dotnetPlugin\bin\JetBrains.BuildServer.MSBuildLoggers.4.0.dll" />
+    <UsingTask TaskName="JetBrains.BuildServer.MSBuildLoggers.NUnit" AssemblyFile="C:\Projects\TeamServer\Nikolay.Pianikov_UNIT-728_trunk\.idea_artifacts\agent_deployment_debug\plugins\dotnetPlugin\bin\JetBrains.BuildServer.MSBuildLoggers.4.0.dll" />
 	<Target Name="Test">
 		<CreateItem Include="HelloWorld.Tests.NUnit2\bin\Debug\*.Tests.NUnit2.dll">
     		<Output TaskParameter="Include" ItemName="NUnit2TestAssembly" />
