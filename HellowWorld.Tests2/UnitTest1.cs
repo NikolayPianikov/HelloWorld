@@ -3,6 +3,7 @@
 namespace HelloWorld.Tests2
 {
 	using System;
+	using System.Diagnostics;
 	using System.Threading;
 
 	[TestFixture]
@@ -84,6 +85,7 @@ namespace HelloWorld.Tests2
 			var testName = string.Format("Test2 {0}", testId);
 			Console.WriteLine("Start test {0}", testName);
 			Thread.Sleep(Rnd.Next(500));
+			Console.WriteLine("ProcessID {0}", Process.GetCurrentProcess().Id);
 			Console.WriteLine("Finish test {0}", testName);
 		}
 	}
