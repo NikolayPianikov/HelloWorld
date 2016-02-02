@@ -23,6 +23,8 @@ namespace HelloWorld.Tests2
 		[Test]
 		public void Test1()
 		{
+			Assert.Throws<Exception>(() => { throw new Exception("Test exception"); });
+			;
 			DoTest(1);
 		}
 
