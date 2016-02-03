@@ -9,7 +9,15 @@ namespace HelloWorld
         public void Do()
         {
             Console.WriteLine(str1?.Length ?? 10);
-            Console.WriteLine("!!!+");			
+            Console.WriteLine("!!!+");
+	        Do2();
+
         }
-    }
+
+		[Excl]
+		public void Do2()
+		{
+			Console.WriteLine("???");
+		}
+	}
 }
